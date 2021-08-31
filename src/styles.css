@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply bg-white rounded-md overflow-hidden shadow-2xl relative;
+}
+
+.badge {
+    @apply text-center text-secondary-200 bg-secondary-100 text-xs rounded-full p-3 font-bold uppercase absolute top-0 m-3;
+}
