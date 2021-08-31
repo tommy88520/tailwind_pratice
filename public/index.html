@@ -7,9 +7,9 @@
     <title>Document</title>
    <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="text-yellow-400 font-body">
-    <div>
-        <div>
+<body class="text-yellow-400 font-mono">
+    <div class="grid md:grid-cols-3 ">
+        <div class="md:col-span-1">
             <nav>
                 <div>
                     <h1 class="font-bold uppercase p-4 border-b border-gray-100 text-mammoth">
@@ -36,10 +36,10 @@
             </nav>
         </div><!-- end for nav-->
 
-        <main class="px-16 py-16 bg-gray-100">
-            <div class="flex justify-center sm:justify-between">
-                <a href="#" class="text-primary">log in</a>
-                <a href="#" class="text-primary ml-2">sign up</a>
+        <main class="px-16 py-16 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center sm:justify-end">
+                <a href="#" class="btn border-primary md:border-2 text-primary">log in</a>
+                <a href="#" class="btn border-primary md:border-2 text-primary ml-2">sign up</a>
             </div>
 
             <div class="flex">
@@ -55,10 +55,33 @@
 
             <div>
                 <h4 class="font-light mb-12 pb-2 border-b border-gray-200">latest recipes</h4>
-                <div class="mt-8">
+                <div class="mt-8 grid lg:grid-cols-3 gap-4">
                     <!-- cards go here-->
                     <div class="card">
                         <img src="./img/IMG_4703.jpeg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 bean chilli stew
+                            </span>
+                            <span class="block text-gray-500 text-sm">Recipes by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span class="">25 min</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/截圖 2021-08-23 上午12.35.46.png" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 bean chilli stew
+                            </span>
+                            <span class="block text-gray-500 text-sm">Recipes by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <span class="">25 min</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/圖片 1.png alt="" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">5 bean chilli stew
                             </span>
@@ -74,9 +97,9 @@
                     <div class="mt-8">
                         <!-- cards go here -->
                     </div>
-                    <div class="flex justify-center">
-                        <div class="bg-secondary-100 text-secondary-200">load more</div>
-                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="btn bg-secondary-100 text-secondary-200">load more</div>
                 </div>
             </div>
         </main>
